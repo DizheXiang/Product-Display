@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background: #7baedc;
+  background: -webkit-radial-gradient(top left, 
+    #7baedc, #cf7bdc);
+background: -moz-radial-gradient(
+  top left, #7baedc, #cf7bdc);
+  background: radial-gradient(
+    to bottom right, 
+    #7baedc, #cf7bdc);
+  font-family: "Poppins", sans-serf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+/*   overflow: hidden; */
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-height: 80vh;
+  width: 25rem;
+  box-shadow: 0px 20px 20px 
+    rgba(0, 0, 0, 0.2), 
+    0px 0px 50px
+    rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 0rem 2rem;
+  transform-style: preserve-3d;
+}
+
+.macBook {
+  margin-top: 3rem;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.macBook img{
+  width: 16rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(
+    to left, 
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75));
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.info h1 {
+  fot-size: 1.6rem;
+  padding: 2rem 0rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  fot-size: 1rem;
+  transition: all 0.75s ease-out;
+  padding: 1rem 0rem;
+  color: #554091;
+  transition: all 0.75s ease-out;
+}
+
+.sizes {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.75s ease-out;
+}
+
+.sizes button {
+  padding: 1rem 2rem;
+  background: #bb95d7;
+  border: none;
+  box-shadow: 0px 5px 10px 
+    rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  color: #5a4a8e;
+}
+
+button.active {
+  color: white;
+  background-color: #7c509b;
+}
+
+.purchase {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 40%;
+  padding: 1.2rem 1.2rem;
+  background: #e95d77;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+@media screen and (min-width: 740px) {
+  .card {
+    width: 35rem;
+    padding: 0rem 5rem;
+  }
+
+  .macBook img {
+    width: 30rem;
+  }
+
+  .circle {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .info h1 {
+    font-size: 3.2rem;
+  }
+
+  .info h3 {
+    font-size: 2rem;
+  }
+}
+
+
